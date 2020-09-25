@@ -6,8 +6,10 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
-function createMenuItem(name, price, category){
-    /* Code here */
+/*let newFoodItem = createMenuItem(name, price, category)*/
+
+function createMenuItem(/*code*/){
+        
 }
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
@@ -40,9 +42,13 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 
 /* Task 3: Console.log just Julius' feedback */
 
+console.log(reviews[5])
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
+reviews.push([{name: "Karen", rating: 1, feedback:"Worst place to ever go to! I will never come back."}])
+
+console.log(reviews.push())
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 
