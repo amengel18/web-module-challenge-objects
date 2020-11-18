@@ -33,6 +33,19 @@ and should return a number.
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
 
+/*export const burger = {
+  name: "Burger",
+  price: 18,
+  category: "Lunch",
+  discount: function (people) {
+    if (people === "teacher" || people === "student") {
+      return this.price * 0.75;
+    } else (people === "public")
+    return this.price * 0.9;
+  }
+}
+
+console.log(burger.discount("teacher")) */
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -74,9 +87,11 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
 function getReviewByIndex(reviews, index) {
-    /* code here */
+    return `${reviews[index].name} gave the restaurant a ${reviews[index].rating}, and their feedback was: ${reviews[index].feedback}`
   }
   
+console.log(getReviewByIndex(reviews, 6))
+
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
