@@ -6,14 +6,20 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
-/*let newFoodItem = createMenuItem(name, price, category)*/
 
-function createMenuItem(/*code*/){
-        
+function createMenuItem(name, price, category){
+        return {
+          name: name,
+          price: price,
+          category: category
+        }
 }
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
 
+console.log(createMenuItem("Grilled Cheese", 10, "Dinner"))
+console.log(createMenuItem("Coke", 2, "Drinks"))
+console.log(createMenuItem("Energy Drink", 4, "Drinks"))
 
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to your burger object that automatically calculates price given a string as a parameter. 
@@ -46,9 +52,9 @@ console.log(reviews[5])
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
-reviews.push([{name: "Karen", rating: 1, feedback:"Worst place to ever go to! I will never come back."}])
+reviews.push({name: "Karen", rating: 1, feedback:"Worst place to ever go to! I will never come back."})
 
-console.log(reviews.push())
+console.log(reviews)
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 
