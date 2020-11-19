@@ -32,20 +32,17 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
+const person = ("teacher", "student", "public")
 
-/*export const burger = {
-  name: "Burger",
-  price: 18,
-  category: "Lunch",
-  discount: function (people) {
-    if (people === "teacher" || people === "student") {
-      return this.price * 0.75;
-    } else (people === "public")
-    return this.price * 0.9;
+function burgerDiscount(person){
+  if (person === "teacher" || person === "student"){
+    return burger.price * 0.75;
+  } else { (person === "public");
+    return burger.price * 0.9;
   }
 }
 
-console.log(burger.discount("teacher")) */
+console.log(burgerDiscount("teacher"))
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -102,10 +99,12 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-    /* code here */
+function getLastReview() {
+     let i = reviews.length
+    return `${i.name} gave the restaurant a ${i.rating}, and their feedback was: ${i.feedback}`
   } 
 
+console.log(getLastReview())  
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
