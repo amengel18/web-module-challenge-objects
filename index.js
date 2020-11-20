@@ -105,12 +105,14 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(reviews) {
-   for (let i = 0; i > reviews.length - 1; i++)
-    return `${name} gave the restaurant a ${rating}, and their feedback was: ${feedback}`
-  } 
+function getLastReview(arr) {
+  return `${arr[arr.length - 1].name} gave the restuarant a ${
+    arr[arr.length - 1].rating
+  } star review and their feedback was: ${arr[arr.length - 1].feedback}`;
+}
+ 
 
-console.log(getLastReview())  
+console.log(getLastReview(reviews))  
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
