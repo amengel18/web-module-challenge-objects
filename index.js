@@ -1,7 +1,7 @@
 ///////////////Menu Items (MVP)///////////////////
 
 const latte = {name: "Cafe Latte", price: 4, category: "Drinks"};
-const burger = {name: "Burger", price: 18, category: "Lunch"};
+//const burger = {name: "Burger", price: 18, category: "Lunch"};
 const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakfast"};
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
@@ -33,16 +33,22 @@ and should return a number.
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
 const person = ("teacher", "student", "public")
+let burger = {
+  name: "Burger", 
+  price: 18, 
+  category: "Lunch"}
 
-function burgerDiscount(person){
+ function burgerDiscount(person){
   if (person === "teacher" || person === "student"){
     return burger.price * 0.75;
   } else { (person === "public");
     return burger.price * 0.9;
   }
-}
+ }
+  
+ console.log(burgerDiscount("teacher"))
 
-console.log(burgerDiscount("teacher"))
+
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -99,9 +105,9 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview() {
-     let i = reviews.length
-    return `${i.name} gave the restaurant a ${i.rating}, and their feedback was: ${i.feedback}`
+function getLastReview(reviews) {
+   for (let i = 0; i > reviews.length - 1; i++)
+    return `${name} gave the restaurant a ${rating}, and their feedback was: ${feedback}`
   } 
 
 console.log(getLastReview())  
